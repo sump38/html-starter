@@ -1,0 +1,25 @@
+div span {
+    color: magenta;
+}
+
+body #thirdSpan {
+    background-color:aqua;
+}
+
+span#thirdSpan {
+    color:blue;
+}
+
+div.moshe {
+   margin-right:30px;
+   background-color:beige;
+}
+
+.moshe {
+    background-color:green;
+}
+
+
+div {
+    background:blue;
+}
