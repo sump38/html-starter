@@ -1,6 +1,11 @@
-div span {
-    color: magenta;
+/* css reset */
+* {
+    margin:0px;
+    padding:0px;
+    border: none;
+    background:none;
 }
+
 
 body #thirdSpan {
     background-color:aqua;
@@ -8,6 +13,7 @@ body #thirdSpan {
 
 span#thirdSpan {
     color:blue;
+
 }
 
 div.moshe {
@@ -19,7 +25,10 @@ div.moshe {
     background-color:green;
 }
 
+span {
+    display:inline-block;
+}
 
-div {
-    background:blue;
+img {
+    height:200px;
 }

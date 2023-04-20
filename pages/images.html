@@ -5,21 +5,19 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Main</title>
+  <title>Image Display</title>
   <link rel="stylesheet" href="/style.css">
-
-
 </head>
 
 <body>
   <div>
-    <div id="test">
-      <h2>Links:</h2>
-      <a href="/pages/images.html" >
-        Images page
-      </a>
+    <div>
+      This is a block element
     </div>
     <div class="wrapper" >
+      <img src="http://127.0.0.1:5500/img/flower1.png" alt="A flower image"/>
+      <img src="/img/flower2.png" />
+      <img src="../img/flower3.png"/>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque officiis placeat assumenda fuga ad reiciendis suscipit eligendi velit illum ullam quibusdam consequatur, vitae officia dicta dolorum nesciunt sequi, harum aliquam?</p>
     </div>
     <span>
@@ -28,10 +26,8 @@
     <span>
       This is a span element
     </span>
-
   </div>
+  <button type="button" >This is a button</button>
 </body>
-<script >
-  document.getElementById('test').innerHTML = '123';
-</script>
+
 </html> 
