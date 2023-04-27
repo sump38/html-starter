@@ -1,73 +1,35 @@
-# html-lesson 7
+# html-lesson 9
 
-CSS shortened blocks:
+## table element
 
-## margin/padding: 
-order (clockwise from 12): top right bottom left. 
-margin: 15px 10px 5px 0px;  
-
-sides: 
-order: top/bottom left/right
-padding: 12px 10px;
-
-all sides:
-margin:0px;
-
-margin-inline/margin-inline-start|end
-margin-block/margin-block-start|end
+`<table>` tag
+### attributes
+* border
+* cellspacing
+* cellpadding
 
 
-## box-sizing
+### container tags
+`<thead>` tag
+`<tbody>` tag
+`<tfoot>` tag 
 
-border-box
-content-box
+`<tr>` tag
 
-## position
-absolute
-relative
-static
-sticky
-
-## float
+`<th>` tag
+`<td>` tag
+`colspan` attribute
 
 
-## border
+## table specific css
 
-shortened: 
-border: 2px solid black;
-
-border-width
-border-style
-border-color
-
-## background 
-
-shortened:
-
-background: top left no-repeat url("../../image.jpg")
-
-background-color
-background-image
-background-position
-background-repeat
-background-size
-
-
-
-## list
-
-text-indent
-
-shortened:
-list-style: type position image
-
-list-style-type
-list-style-image
-list-style-position
-
-## pesudo-classes
-
-:hover
-:link
-
+border-collapse
+border-spacing
+#### display properties
+table
+table-cell
+table-row
+table-row-group
+table-header-group
+table-footer-group
 
