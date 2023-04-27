@@ -1,35 +1,64 @@
-# html-lesson 9
+# css-lesson 9
 
-## table element
+## overflow
 
-`<table>` tag
-### attributes
-* border
-* cellspacing
-* cellpadding
+* overflow
+* overflow-x
+* overflow-y
+
+* overflow:hidden
+* overflow:auto
+
+## CSS - position
+
+* relative
+* absolute
+* sticky
+* fixed
+* static
+
+positional elemets:
+
+* left
+* top
+* right
+* bottom
+* index
 
 
-### container tags
-`<thead>` tag
-`<tbody>` tag
-`<tfoot>` tag 
+### float
 
-`<tr>` tag
+* float
+* clear
 
-`<th>` tag
-`<td>` tag
-`colspan` attribute
+### size units
+
+* px
+* %
+* em
+* rem
+* vw
+* vh
 
 
-## table specific css
+## css pseudo-classes
 
-border-collapse
-border-spacing
-#### display properties
-table
-table-cell
-table-row
-table-row-group
-table-header-group
-table-footer-group
+:hover
+:link (a tag only)
+:checked (input type checkbox)
+:enabled/:disabled
+:nth-child(n)
+:last-child
+
+
+## attribute selectors
+
+
+
+## css pseudo-elements
+
+
+
+
+
 
