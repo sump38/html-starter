@@ -7,11 +7,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Main</title>
   <link rel="stylesheet" href="/style.css">
-
-
 </head>
 
 <body>
-
+  <table>
+    <caption>This is my Caption</caption>
+    <colgroup>
+      <col span="1" class="first-column">
+      <col span="2" >
+    </colgroup>
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th colspan="2" class="cell-wide">
+          Age
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Cell 1
+        </td>
+        <td colspan="2">
+          Cell 2
+        </td>
+        <td>
+          Cell 3
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Cell 1a
+        </td>
+        <td>
+          Cell 2a
+        </td>
+        <td>
+          Cell 3a
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>
+          Total:
+        </th>
+        <td colspan="3">
+          200
+        </td>
+      </tr>
+    </tfoot>
+  </table>
 </body>
-</html> 
+
+</html>

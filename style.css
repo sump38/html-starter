@@ -1,0 +1,24 @@
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: normal;
+}
+
+td {
+    padding:5px;
+}
+
+td, th {
+    text-align:center;
+}
+
+.cell-wide {
+    background-color: aquamarine;
+}
+
+.first-column {
+    background-color: blueviolet;
+}
