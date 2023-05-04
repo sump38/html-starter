@@ -1,63 +1,85 @@
-# css-lesson 9
+# html-lesson 11
 
-## overflow
+## elements:
 
-* overflow
-* overflow-x
-* overflow-y
+* form
+* input
+* select
+* textarea
+* button
+* label
+* fieldset
+* legend
+## form attributes
+[Form in MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
 
-* overflow:hidden
-* overflow:auto
+* action
+* method
+    - POST
+    - GET
+* enctype
+    - application/x-www-form-urlencoded
+    - text/plain
+    - multipart/form-data
+* name
+* autocomplete
+* novalidate
+* target
 
-## CSS - position
+## input types
 
-* relative
-* absolute
-* sticky
-* fixed
-* static
+* text
+* number
+* submit
+* email
+* date
+* file
+* button
+* checkbox
+* radio
+* and more...
 
-positional elemets:
+## input attributes
+[input on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
 
-* left
-* top
-* right
-* bottom
-* index
+* name
+* value
+* placeholder
+* alt
+* checked
+* disabled
+* pattern
+* readonly
 
+## input validator attributes
 
-### float
+* required
+* minlength
+* maxlength
+* min
+* max
+* pattern
 
-* float
-* clear
+## field css selectors (pseudo-classes)
 
-### size units
+:valid
+:invalid
+:checked
+:enabled
+:disabled
 
-* px
-* %
-* em
-* rem
-* vw
-* vh
+## pseudo-elements
 
+::before
+::after
 
-## css pseudo-classes
+## css - sizing
 
-:hover
-:link (a tag only)
-:checked (input type checkbox)
-:enabled/:disabled
-:nth-child(n)
-:last-child
-
-
-## attribute selectors
-
-
-
-## css pseudo-elements
-
-
+percent (%)
+pixels (px)
+em
+rem
+view (vw/vh)
 
 
 
