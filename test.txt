@@ -1,1 +1,2 @@
 This will allow merging
+this is a new line
