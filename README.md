@@ -1,4 +1,4 @@
-# html-lesson 11
+# html/css-lesson 11
 
 ## elements:
 
@@ -80,6 +80,13 @@ pixels (px)
 em
 rem
 view (vw/vh)
+
+## css - overflow
+
+auto
+overflow-y
+overflow-x
+hidden
 
 
 
