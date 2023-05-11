@@ -8,28 +8,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="" method="post" target="_parent" enctype="" >
+    <form action="" method="post" target="_parent" enctype="multipart/form-data" autocomplete="off" >
         <fieldset>
-            <input name="name" placeholder="insert name" required type="text" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" />
+            <input class="email-input" required name="email" placeholder="insert email" value="abc" type="text" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" />
             <br>
-            <textarea name="details" minlength="20" cols="40" rows="2" placeholder="Enter details" >This area will be the value</textarea>
+            <textarea name="details" minlength="20" cols="40" rows="2" placeholder="Enter details" >
+                This area will be the value
+            </textarea>
         </fieldset>
         <fieldset >
-            <input type="checkbox" name="agree to conditions" id="checkbox-agree" >
-            <label for="checkbox-agree" >Agree to conditions</label>
+            <div class="checkbox">
+                <input type="checkbox" name="agree to conditions" id="checkbox-agree" >
+                <label for="checkbox-agree" >Agree to conditions</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <label for="company_id" >Select company</label>
+            <select name="company" id="company_id">
+                <option>Google</option>
+                <option value="0">Microsoft</option>
+                <option>Apple</option>
+            </select>
+            <input type="file" name="fileToSend" multiple />
         </fieldset>
         <fieldset >
-            <legend>How much do you agree with the poll?</legend>
+            <legend>How much do you agree &lt; with the poll?</legend>
+            <!-- Mutually exclusive group -->
             <p>
-                <input name="poll-answer" value="0" type="radio" id="radio-agree" >
+                <input name="poll-answer" value="agree" type="radio" id="radio-agree" >
                 <label for="radio-agree">Agree</label>
             </p>
             <p>
-                <input name="poll-answer" value="1" type="radio" id="radio-disagree" >
+                <input name="poll-answer" value="disagree" type="radio" id="radio-disagree" >
                 <label for="radio-disagree">Disagree</label>
             </p>
             <p>
-                <input name="poll-answer" value="2" type="radio" id="radio-notsure" checked>
+                <input name="poll-answer" value="notsure" type="radio" id="radio-notsure">
                 <label for="radio-notsure">Not Sure</label>
             </p>
         </fieldset>
@@ -42,5 +56,15 @@
             <label for="heart" >Add to favorites</label>
         </div>
     </form>
+
+
+    <div class="divWithAfter">
+        This div should have a pseudo element
+    </div>
 </body>
 </html>
+
+
+
+
+
