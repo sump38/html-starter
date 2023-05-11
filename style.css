@@ -1,4 +1,19 @@
-input.nobuttons::-webkit-outer-spin-button,
-input.nobuttons::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+
+/*attribute selector */
+input[type="password"] {
+    background: aquamarine;
+}
+
+/* pseudo-class */
+button {
+    background:blue;
+}
+
+button:hover {
+    background:red;
+    font-size: 50px;
+}
+
+div:hover {
+    background: #ffffff;
 }
