@@ -1,0 +1,32 @@
+.container {
+    display:flex;
+    width: 300px;
+}
+
+.container div {
+    border:1px solid black;
+}
+
+.block-container {
+    display:block;
+    width:200px;
+    border:1px solid black;
+    height:400px;
+}
+.inner {
+    width:100px;
+    height:200px;
+    display:inline-block;
+    background-color: blueviolet;
+    color:white;
+}
+
+
+.before {
+    height:400px;
+    width:10px;
+    background-color:brown;
+    color:white;
+    display:inline-block;
+}
+
