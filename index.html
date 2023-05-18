@@ -13,14 +13,13 @@
     my test div
   </div>
   <h1>74 &lt; 99</h1>     
-  <form action="" method="post">
+  <form action="" method="get" novalidate>
     <p>
       <label for="myPassword" >Password</label>
       <input type="password" name="q" id="myPassword" />                             
     </p>
     <p>
-      <input type="text" name="last-name" value="my last name" disabled />
-      
+      <input type="text" name="last-name" required />
     </p>
     <p>
       <input type="checkbox" id="clicker" name="clicker" value="clicker" />
@@ -32,11 +31,11 @@
         <label for="radio1" >Option 1</label>
       </p>
       <p>
-        <input type="radio" name="myRadio" id="radio2" value="salad" />
+        <input type="radio" name="myRadio" id="radio2" value="salad"  />
         <label for="radio2" >Option 2</label>
       </p>
       <p>
-        <input type="radio" name="myRadio" id="radio3" value="rice" />
+        <input type="radio" name="myRadio" id="radio3" value="rice"  />
         <label for="radio3" >Option 3</label>
       </p>
     </fieldset>

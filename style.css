@@ -88,3 +88,15 @@ div:hover {
     background-color: #d061d0;
     color:white;
 }
+
+input:required {
+    border:1px solid red;
+}
+
+input:invalid {
+    background-color: #d061d0;
+}
+
+input:valid {
+    background-color: aquamarine;
+}
