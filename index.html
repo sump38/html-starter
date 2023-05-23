@@ -10,21 +10,21 @@
 <body>
     <div id="wrapper">
         <form action="" method="post">
-            <label class="big-label">User Deatails:</label>
+            <p>User Deatails:</p>
             <div class="row">   
                 <div class="duo">
                     <label for="first-name">First Name:</label>
-                    <input type="text" id="first-name" name="first-name">
+                    <input type="text" id="first-name" name="first-name" required>
                 </div>
                 <div class="duo">
                     <label for="last-name">Last Name:</label>
-                    <input type="text" id="last-name" name="last-name">
+                    <input type="text" id="last-name" name="last-name" required>
                 </div>
             </div>
             <div class="row">
                 <div class="duo">
                         <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
                 </div>
                 <div class="duo">
                     <label for="phone">Phone Number:</label>
@@ -32,16 +32,18 @@
                 </div>
             </div>
             <div class="duo">
-                <label class="big-label">Additional Details:</label>
+                <p>Additional Details:</p>
                 <label for="Profession">Profession:</label>
-                <select name="Profession">
+                <select id="prof" name="Profession">
                     <option value="">-Select-</option>
                     <option value="front-end">Front End programer</option>
                     <option value="back-end">Back End programer</option>
                     <option value="cashier">cashier</option>
                 </select>
+            </div>
+            <div class="duo">
                 <label for="comments">Comments:</label>
-                <textarea id="comments" name="comments" rows="5"></textarea>
+                <textarea id="comments" name="comments" rows="5" placeholder="Write something nice..."></textarea>
             </div>
             <div id="sub">
                 <button type="reset" id="reset">reset form</button>
