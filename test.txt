@@ -1,5 +1,0 @@
-This will allow merging
-this is a new line
-this is a third line
-this is a fourth line
-this is another fifth line
