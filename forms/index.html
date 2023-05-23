@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <form action="" method="post">
+            <label class="big-label">User Deatails:</label>
+            <div class="row">   
+                <div class="duo">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name">
+                </div>
+                <div class="duo">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="duo">
+                        <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="duo">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+            </div>
+            <div class="duo">
+                <label class="big-label">Additional Details:</label>
+                <label for="Profession">Profession:</label>
+                <select name="Profession">
+                    <option value="">-Select-</option>
+                    <option value="front-end">Front End programer</option>
+                    <option value="back-end">Back End programer</option>
+                    <option value="cashier">cashier</option>
+                </select>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="5"></textarea>
+            </div>
+            <div id="sub">
+                <button type="reset" id="reset">reset form</button>
+                <button type="submit" id="submit">submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
