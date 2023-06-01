@@ -1,12 +1,14 @@
-# html/css-lesson 15
+# html/css-lesson 17
 
 ## elements:
 
 * picture
 * video
 * audio
+* iframe
 
 * source and srcset
+* images - vector vs raster
 
 ## css - sizing
 
@@ -37,15 +39,10 @@ background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-at
 ## css - object-position
 * left top
 
-## css - flexbox - internal items
-
-* flex-basis
-* flex-grow
-* flex-shrink
-* flex grow shrink basis
-* justify-self
-
 ## css - media queries
+@media selector
+
+max-width vs min-width
 
 ## css - custom properties (variables)
 
