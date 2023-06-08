@@ -1,8 +1,15 @@
-* {
-    margin:0px;
-    padding:0px;
+
+div {
+    width:200px;
+    height:200px;
+    margin:50px;
 }
 
-img {
-    width:100%;
+.shadowed {
+    box-shadow: var(--shadow);
+    color: var(--blueColor);
+}
+
+.inner {
+    border: var(--greenBorder);
 }
