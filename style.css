@@ -4,6 +4,11 @@ html {
 }
 
 .grid-container {
+    display:grid;
+    grid-template-columns: [first] 100px 200px 100px;
+    grid-template-rows: 100px 200px 100px;
+    row-gap: 1em;
+    column-gap: 2em;
 }
 
 .grid-container > div {
@@ -14,8 +19,6 @@ html {
     display:flex;
     justify-content: center;
     align-items: center;
-    min-width:200px;
-    min-height:200px;
 }
 
 .item-1 {
@@ -44,9 +47,15 @@ html {
 
 
 .item-1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 .item-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end:2;
 }
 
 .item-3 {
