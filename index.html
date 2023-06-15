@@ -16,27 +16,40 @@
       console.log('test');
     }
   </script>
-  <div id="divToSelect" class="animated">Hover</div>
-  <button onclick="clickfunc()" >Click this</button>
+  <!-- <div id="divToSelect" class="animated">Hover</div> -->
+  <!-- <button onclick="clickfunc()" >Click this</button> -->
+  <div class="container">
+    <div class="internal">internal</div>
+  </div>
 </body>
 <style>
+
   .animated {
     width:100px;
     position: absolute;
-    left:-100px;
+    left:100px;
     height:100px;
     background:white;
     border:1px solid black;
-    transition: left 1s ease-in-out, width 3s;
+    /* transform-origin: 0px 0px; */
+
+
+    /* transition: all 2s; */
   }
 
   .animated.active {
-    animation: moving 5s;
-    left:40px;
+    /* animation-play-state: paused; */
+    /* left:200px; */
+    opacity: 1;
+    display:block;
+    animation: scaling 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
   
   .animated:hover {
-    width:200px;
+    /* width:200px; */
+    /* transform: rotate(170deg); */
   }
 
   button {
@@ -44,17 +57,71 @@
     top:200px;
   }
 
+  .container {
+    width:250px;
+    height:100px;
+    border:1px solid black;
+  }
+
+  .internal {
+    border:1px solid red;
+  }
+
+
+
+
   @keyframes moving {
     0% {
-      left:-20px;
+      left:0px;
     }
     50% {
-      left: 100px;
+      left: 20px;
     }
     100% {
-      left:40px;
+      left:0px;
     }
   }
+
+  @keyframes hanging {
+    from {
+      transform: rotate(0deg);
+    }
+    70% {
+      transform: rotate(110deg);
+    }
+    80% {
+      transform: rotate(80deg);
+    }
+    90% {
+      transform: rotate(95deg);
+    }
+    to {
+      transform: rotate(90deg);
+    }
+    
+  }
+    @keyframes rotating {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate3d(1,1,1, 360deg);
+      }
+    }
+
+    @keyframes scaling {
+      from {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(2);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+
+
 
   button {
     animation: moving 2s;
