@@ -1,37 +1,46 @@
-# html/css-lesson 19
+# html/css-lesson 21
 
-## elements:
+## animations:
 
-* picture
-* video
-* audio
-* iframe
+1. transitions
+smooth transition between css states (margin, width, opacity etc.)
 
-* source and srcset/sizes
-* images - vector vs raster
+shorthand:
+`transition: transition-property transition-duration transition-timing-function transition-delay`
 
-## css - background-image 
-background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
+[transition-timing-function options](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function)
 
-## css- box-shadow
-box-shadow: h-offset v-offset blur spread color inset;
+2. animation
+keyframe based animation that works regardless of object state
 
-## css - object-fit
+animation-delay
+animation-direction
+animation-duration
+animation-fill-mode
+animation-iteration-count
+animation-name
+animation-play-state
+animation-timing-function
 
-* fill
-* contain
-* cover
-* none
+[documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
 
-## css - object-position
-* left top
+## display grid
 
-## css - custom properties (variables)
+### main grid properties:
 
-declaration: '--myVarName: 10px'
-use: var(--myVarName)
-:root element
-
-
+grid-template-columns
+grid-template-rows
+grid-template-areas
 
 
+justify-items
+align-items
+justify-content
+align-content
+place-items (align/justify in one)
+place-content
+
+
+
+repeat() function | auto-fill | auto-fit
+fr unit

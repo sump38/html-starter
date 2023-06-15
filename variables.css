@@ -1,8 +1,0 @@
-:root {
-  --blueColor: #2222ff;
-  --shadow: 5px 10px 15px red;
-}
-
-div {
-  --greenBorder: 1px solid green;
-}
