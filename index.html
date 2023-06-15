@@ -6,8 +6,61 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Main</title>
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+  <script>
+    function clickfunc() {
+      document.getElementById('divToSelect').classList.toggle('active');
+      console.log('test');
+    }
+  </script>
+  <div id="divToSelect" class="animated">Hover</div>
+  <button onclick="clickfunc()" >Click this</button>
 </body>
+<style>
+  .animated {
+    width:100px;
+    position: absolute;
+    left:-100px;
+    height:100px;
+    background:white;
+    border:1px solid black;
+    transition: left 1s ease-in-out, width 3s;
+  }
+
+  .animated.active {
+    animation: moving 5s;
+    left:40px;
+  }
+  
+  .animated:hover {
+    width:200px;
+  }
+
+  button {
+    position: absolute;
+    top:200px;
+  }
+
+  @keyframes moving {
+    0% {
+      left:-20px;
+    }
+    50% {
+      left: 100px;
+    }
+    100% {
+      left:40px;
+    }
+  }
+
+  button {
+    animation: moving 2s;
+  }
+
+
+</style>
+
 </html>

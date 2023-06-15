@@ -1,15 +1,34 @@
-
-div {
-    width:200px;
-    height:200px;
-    margin:50px;
-}
-
-.shadowed {
+/* .shadowed {
     box-shadow: var(--shadow);
     color: var(--blueColor);
 }
 
 .inner {
     border: var(--greenBorder);
+} */
+
+/* css for product container */
+
+.product-container {
+    width:500px;
+    overflow:hidden;
+    display:flex;
+    flex-direction: row;
+}
+
+.product-container > img {
+    /* max-width:200px */
+}
+
+
+@media screen and (max-width: 600px) {
+    .product-container {
+        flex-direction: column;
+        width:100%;
+    }
+
+    .product-container > img {
+        width:100%;
+        max-width: unset;
+    }
 }
